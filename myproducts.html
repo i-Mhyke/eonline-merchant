@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8eaa0a7b1b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/merchantproducts.css">
+    <title>Merchant Page</title>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Hi, <span id="user-name"></span> Welcome Back</h3>
+        <hr>
+        <a href="myproducts.html"><i class="fas fa-shopping-bag nav-icon"></i><span class="nav-text">My Products</span></a>
+        <a href="addproduct.html"><i class="fas fa-plus nav-icon"></i><span class="nav-text">Add Products</span></a>
+      </div>
+      <div class="main-body">
+          <header>
+              <div class="nav-menu-container">
+                  <div id="logo">
+                      <h1>
+                          <a href="#" class="logo"> EvOnline Merchant </a>
+                      </h1>
+                  </div>
+                  <div class="menu-icon" onclick="openNav()"><i class="fas fa-bars"></i></div>
+              </div>
+          </header>
+          <div class="container">
+            <div class="form-container" style="overflow-x:auto;">
+                <h2> Merchant Products</h2>
+                <table>
+                  <tr id="product-table-container">
+                      <th>id</th>
+                    <th>PRODUCT NAME</th>
+                    <th>CATEGORY</th>
+                    <th>DESCRIPTION</th>
+                    <th>PRICE</th>
+                    <th>AVAILABLE</th>
+                    <th>IMAGE</th>
+                    <th>DELETE</th>
+                  </tr>
+                </table>
+              </div>
+              
+          </div>
+    <div id="mySidenav" class="sidenav">
+        <h3>Hi, <span id="user-name2"></span> Welcome Back</h3>
+        <hr>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="myproducts.html"><i class="fas fa-shopping-bag nav-icon"></i><span class="nav-text">My Products</span></a>
+        <a href="addproduct.html"><i class="fas fa-plus nav-icon"></i><span class="nav-text">Add Products</span></a>
+    </div>
+    
+<script src="./javascript/merchantproducts.js"></script>
+</body>
+</html>

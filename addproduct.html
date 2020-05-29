@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8eaa0a7b1b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/marchantpage.css">
+    <title>Merchant Page</title>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Hi, <span id="user-name"></span> Welcome!</h3>
+        <hr>
+        <a href="myproducts.html"><i class="fas fa-shopping-bag nav-icon"></i><span class="nav-text">My Products</span></a>
+        <a href="addproduct.html"><i class="fas fa-plus nav-icon"></i><span class="nav-text">Add Products</span></a>
+      </div>
+      <div class="main-body">
+          <header>
+              <div class="nav-menu-container">
+                  <div id="logo">
+                      <h1>
+                          
+                          <a href="#" class="logo"> EvOnline Merchant </a>
+                      </h1>
+                  </div>
+                  <div class="menu-icon" onclick="openNav()"><i class="fas fa-bars"></i></div>
+              </div>
+          </header>
+          <div class="container">
+              <form class="form-container">
+                  <h1 class="form-head">PRODUCT UPLOAD</h1>
+                  <div id="output">
+                          
+                  </div>
+      
+                  <div class="labels">
+                      <label for="name">Product name</label><br>
+                      <input type="text" id="name" name="name" required/>
+                  </div>
+      
+                  <div class="labels">
+                      <label for="category">Product Category</label><br>
+                          <select id="category" name="category" required>
+                              <option value = "" disabled selected hidden>Click To Select</option>
+                              <option value = "MOBILE">MOBILE</option>
+                              <option value = "CLOTHING">CLOTHING</option>
+                              <option value = "FOOTWEAR">FOOTWEAR</option>
+                              <option value="AUTOMOBILE">AUTOMOBILE</option>
+                              <option value="PC">PC</option>
+                          </select><br>
+                  </div>
+      
+                  <div class="labels">
+                      <label for="price">Product Price (In Naira)</label><br>
+                      <input type="number" id="price" name="price" required/>
+                  </div>
+      
+                  <div class="labels">
+                      <label for="numberAvailable">Number of product pieces available</label><br>
+                      <input type="number" id="numberAvailable" name="numberAvailable" required/>
+                  </div>
+      
+                  <div class="labels">
+                      <label for="image">Product Image</label><br>
+                      <input type="file" id="image" name="image" required/>
+                  </div>
+      
+                  <div class="btn-div">
+                      <input type="submit" value="UPLOAD PRODUCT" class="btn">
+                  </div>
+          
+              </form>
+          </div>
+      </div>
+    <div id="mySidenav" class="sidenav">
+        <h3>Hi, <span id="user-name2"></span> Welcome!</h3>
+        <hr>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="myproducts.html"><i class="fas fa-shopping-bag nav-icon"></i><span class="nav-text">My Products</span></a>
+        <a href="addproduct.html"><i class="fas fa-plus nav-icon"></i><span class="nav-text">Add Products</span></a>
+    </div>
+    
+<script src="./javascript/marchant.js"></script>
+</body>
+</html>
+
