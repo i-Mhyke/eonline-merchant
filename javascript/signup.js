@@ -213,7 +213,7 @@ function submitLoginForm(e) {
             loginDiv.reset();
             localStorage.setItem('token', data.token);
             localStorage.setItem('payload', JSON.stringify(data.user));
-            location.replace("./addproduct.html")
+            location.replace("./myproducts.html")
         }
         loading.innerHTML = '';
     })
